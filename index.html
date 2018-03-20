@@ -5,10 +5,12 @@
 	</title>		
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<script type="text/javascript" src="node_modules/instafeed.js/instafeed.min.js"></script>
 
 	<script
-	src="https://code.jquery.com/jquery-3.1.1.js"
-	integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+	src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 	crossorigin="anonymous"></script>
 
 	<!-- Latest compiled and minified JavaScript -->
@@ -20,16 +22,21 @@
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 	
+	<script src="magnific.min.js"></script>
+
 	<script src="https://use.fontawesome.com/909f7164ce.js"></script>
 
 	<script type="text/javascript" src="index.js"></script>
 
-	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" href="magnific.css">
 
+	<link rel="stylesheet" type="text/css" href="index.css">
 </head>
+
+
 <body>
 	<div class="container-fluid">
-		<nav class="navbar navbar-default">
+		<nav class="navbar navbar-default" id="navbar-global">
 			<div class="container-fluid">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
@@ -47,17 +54,17 @@
 					<ul class="nav navbar-nav navbar-right">
 						<li>
 							<a href="https://instagram.com/kovid.g">
-							<i class="fa fa-instagram fa-2x right-icons" aria-hidden="true"></i>
+								<i class="fa fa-instagram fa-2x right-icons" aria-hidden="true"></i>
 							</a>
 						</li>
 						<li>
 							<a href="https://facebook.com/kovidphotography">
-							<i class="fa fa-facebook fa-2x right-icons" aria-hidden="true"></i>
+								<i class="fa fa-facebook fa-2x right-icons" aria-hidden="true"></i>
 							</a>
 						</li>
 						<li>
 							<a href="https://500px.com/kovid">
-							<i class="fa fa-500px fa-2x right-icons" aria-hidden="true"></i>
+								<i class="fa fa-500px fa-2x right-icons" aria-hidden="true"></i>
 							</a>
 						</li>
 					</ul>
@@ -65,5 +72,10 @@
 			</div><!-- /.container-fluid -->
 		</nav>
 	</div>
+	<div class="container-fluid">
+		<div id="instafeed" class="row gallery">
+		</div>
+	</div>
+</div>
 </body>
 </html>
